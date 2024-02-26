@@ -1,15 +1,10 @@
 <div align="center">
-    <h1 align="center">BentoSDXLTurbo</h1>
-    <br>
-    <strong>Image generation with speed and ease<br></strong>
-    <i>Powered by BentoML 🍱</i>
-    <br>
+    <h1 align="center">Serving SDXL Turbo with BentoML</h1>
 </div>
-<br>
 
 [Stable Diffusion XL Turbo](https://huggingface.co/stabilityai/sdxl-turbo) is a real-time text-to-image generation model utilizing a novel distillation technique called Adversarial Diffusion Distillation (ADD). This technology enables SDXL Turbo to generate images in a single step, significantly enhancing performance and reducing computational requirements without sacrificing image quality.
 
-This project builds an image generation application using BentoML, powered by [diffusers](https://github.com/huggingface/diffusers) and SDXL Turbo.
+This is a BentoML example project, demonstrating how to build an image generation inference API server, using the SDXL Turbo model. See [here](https://github.com/bentoml/BentoML?tab=readme-ov-file#%EF%B8%8F-what-you-can-build-with-bentoml) for a full list of BentoML example projects.
 
 ## Prerequisites
 
@@ -65,6 +60,8 @@ with bentoml.SyncHTTPClient("http://localhost:3000") as client:
             guidance_scale=0.0
         )
 ```
+
+For detailed explanations of the Service code, see [Stable Diffusion XL Turbo](https://docs.bentoml.com/en/latest/use-cases/diffusion-models/sdxl-turbo.html).
 
 ## Deploy to BentoCloud
 
